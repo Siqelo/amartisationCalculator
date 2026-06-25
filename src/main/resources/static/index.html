@@ -564,8 +564,8 @@
     const principal  = parseMoneyInput(document.getElementById('principal').value);
     const rate       = parseFloat(document.getElementById('rate').value);
     const period     = parseInt(document.getElementById('period').value);
-    const rawInception = document.getElementById("inceptionDate").value;
-    const inception = rawInception.replaceAll("/", "-");
+    const inception  = document.getElementById('inception').value;
+    
 
     // Basic validation
     if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return showError('Please enter a valid email address.');
